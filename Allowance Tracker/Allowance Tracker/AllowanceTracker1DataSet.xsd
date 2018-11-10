@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AllowanceTracker1DataSet" targetNamespace="http://tempuri.org/AllowanceTracker1DataSet.xsd" xmlns:mstns="http://tempuri.org/AllowanceTracker1DataSet.xsd" xmlns="http://tempuri.org/AllowanceTracker1DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="AllowanceTracker1ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AllowanceTracker1ConnectionString (MySettings)" PropertyReference="ApplicationSettings.Allowance_Tracker.My.MySettings.GlobalReference.Default.AllowanceTracker1ConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblAllowanceTableAdapter" GeneratorDataComponentClassName="tblAllowanceTableAdapter" Name="tblAllowance" UserDataComponentName="tblAllowanceTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AllowanceTracker1ConnectionString (MySettings)" DbObjectName="tblAllowance" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT AllowanceDate, AllowanceAmount, AllowanceNote, ChildsName FROM tblAllowance</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AllowanceDate" DataSetColumn="AllowanceDate" />
+              <Mapping SourceColumn="AllowanceAmount" DataSetColumn="AllowanceAmount" />
+              <Mapping SourceColumn="AllowanceNote" DataSetColumn="AllowanceNote" />
+              <Mapping SourceColumn="ChildsName" DataSetColumn="ChildsName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AllowanceTracker1DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="AllowanceTracker1DataSet" msprop:Generator_UserDSName="AllowanceTracker1DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblAllowance" msprop:Generator_TableClassName="tblAllowanceDataTable" msprop:Generator_TableVarName="tabletblAllowance" msprop:Generator_TablePropName="tblAllowance" msprop:Generator_RowDeletingName="tblAllowanceRowDeleting" msprop:Generator_RowChangingName="tblAllowanceRowChanging" msprop:Generator_RowEvHandlerName="tblAllowanceRowChangeEventHandler" msprop:Generator_RowDeletedName="tblAllowanceRowDeleted" msprop:Generator_UserTableName="tblAllowance" msprop:Generator_RowChangedName="tblAllowanceRowChanged" msprop:Generator_RowEvArgName="tblAllowanceRowChangeEvent" msprop:Generator_RowClassName="tblAllowanceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AllowanceDate" msprop:Generator_ColumnVarNameInTable="columnAllowanceDate" msprop:Generator_ColumnPropNameInRow="AllowanceDate" msprop:Generator_ColumnPropNameInTable="AllowanceDateColumn" msprop:Generator_UserColumnName="AllowanceDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AllowanceAmount" msprop:Generator_ColumnVarNameInTable="columnAllowanceAmount" msprop:Generator_ColumnPropNameInRow="AllowanceAmount" msprop:Generator_ColumnPropNameInTable="AllowanceAmountColumn" msprop:Generator_UserColumnName="AllowanceAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AllowanceNote" msprop:Generator_ColumnVarNameInTable="columnAllowanceNote" msprop:Generator_ColumnPropNameInRow="AllowanceNote" msprop:Generator_ColumnPropNameInTable="AllowanceNoteColumn" msprop:Generator_UserColumnName="AllowanceNote" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ChildsName" msprop:Generator_ColumnVarNameInTable="columnChildsName" msprop:Generator_ColumnPropNameInRow="ChildsName" msprop:Generator_ColumnPropNameInTable="ChildsNameColumn" msprop:Generator_UserColumnName="ChildsName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
