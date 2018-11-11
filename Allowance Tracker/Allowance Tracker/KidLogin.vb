@@ -1,7 +1,8 @@
-﻿Imports System.Data
-Imports System.Configuration
-Imports System.Data.SqlClient
+﻿
 Public Class KidLogin
+
+    Public strCurrentUser As String
+
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmitKidLogin.Click
         ' This event handler executes when the user clicks the login button
         ' and takes the user to the kids login form.
@@ -27,6 +28,7 @@ Public Class KidLogin
 
                 Dim sqlRead As System.Data.OleDb.OleDbDataReader = sqlCom.ExecuteReader()
                 If sqlRead.Read() Then
+                    strCurrentUser = cboChooseName.Text
                     txtPasswordKidLogin.Text = ""
                     cboChooseName.Text = ""
                     lblErrorChildLogin.Text = ""
@@ -81,15 +83,15 @@ Public Class KidLogin
         Dim sda As New System.Data.OleDb.OleDbDataAdapter("SELECT ChildName FROM tblChildInformation", conn)
         'Fill the DataTable with records from Table.
         Dim dt As DataTable = New DataTable()
-            sda.Fill(dt)
+        sda.Fill(dt)
 
         'Insert the Default Item to DataTable.
         Dim row As DataRow = dt.NewRow()
         dt.Rows.InsertAt(row, 0)
 
-            'Assign DataTable as DataSource.
-            cboChooseName.DataSource = dt
-            cboChooseName.DisplayMember = "ChildName"
+        'Assign DataTable as DataSource.
+        cboChooseName.DataSource = dt
+        cboChooseName.DisplayMember = "ChildName"
 
     End Sub
 End Class

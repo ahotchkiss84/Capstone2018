@@ -64,6 +64,17 @@ Namespace My
                 Return CType(Me("AllowanceTracker1ConnectionString"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\AllowanceTracker1.md"& _ 
+            "b")>  _
+        Public ReadOnly Property AllowanceTracker1ConnectionString1() As String
+            Get
+                Return CType(Me("AllowanceTracker1ConnectionString1"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 
