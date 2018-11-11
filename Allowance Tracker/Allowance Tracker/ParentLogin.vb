@@ -32,6 +32,7 @@
 
                     ' If user enter wrong username and password combination
                     ' Throw an error message
+                    lblErrorParentLogin.Visible = True
                     lblErrorParentLogin.Text = "Username and Password do not match."
 
                     'Clear all fields
@@ -60,7 +61,7 @@
         ' This event handler executes when the user clicks the Forgot Password button and opens
         ' the ForgotPassword form.
         ForgotPassword.Show()
-        Me.Hide()
+        Me.Close()
 
     End Sub
 
@@ -69,7 +70,7 @@
         ' to the Parents.vb screen.
 
         Parents.Show()
-        Me.Hide()
+        Me.Close()
 
     End Sub
 End Class

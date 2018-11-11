@@ -3,8 +3,6 @@
 Public Class ViewAllowance
     Private Sub ViewAllowance_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        lstvAllowance.Items.Clear()
-
         Call connection()
 
         Dim adapter As New OleDbDataAdapter

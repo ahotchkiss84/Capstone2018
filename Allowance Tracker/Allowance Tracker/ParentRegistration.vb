@@ -60,7 +60,7 @@
         ' and returns the user to the Parents.vb screen.
 
         Parents.Show()
-        Me.Hide()
+        Me.Close()
 
     End Sub
 

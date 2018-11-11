@@ -23,16 +23,51 @@ Partial Class ViewPurchases
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ViewPurchases))
-        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.lstvPurchase = New System.Windows.Forms.ListView()
+        Me.colDate = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.colAmount = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.colDescription = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.btnBackPurchase = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'ListView1
+        'lstvPurchase
         '
-        Me.ListView1.Location = New System.Drawing.Point(13, 146)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(315, 97)
-        Me.ListView1.TabIndex = 0
-        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.lstvPurchase.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.colDate, Me.colAmount, Me.colDescription})
+        Me.lstvPurchase.Location = New System.Drawing.Point(12, 141)
+        Me.lstvPurchase.Name = "lstvPurchase"
+        Me.lstvPurchase.Size = New System.Drawing.Size(316, 245)
+        Me.lstvPurchase.TabIndex = 0
+        Me.lstvPurchase.UseCompatibleStateImageBehavior = False
+        Me.lstvPurchase.View = System.Windows.Forms.View.Details
+        '
+        'colDate
+        '
+        Me.colDate.Text = "Date"
+        Me.colDate.Width = 77
+        '
+        'colAmount
+        '
+        Me.colAmount.Text = "Item Amount"
+        Me.colAmount.Width = 73
+        '
+        'colDescription
+        '
+        Me.colDescription.Text = "Item Description"
+        Me.colDescription.Width = 160
+        '
+        'btnBackPurchase
+        '
+        Me.btnBackPurchase.BackColor = System.Drawing.Color.Gainsboro
+        Me.btnBackPurchase.FlatAppearance.BorderColor = System.Drawing.Color.DimGray
+        Me.btnBackPurchase.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBackPurchase.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBackPurchase.ForeColor = System.Drawing.Color.DimGray
+        Me.btnBackPurchase.Location = New System.Drawing.Point(110, 394)
+        Me.btnBackPurchase.Name = "btnBackPurchase"
+        Me.btnBackPurchase.Size = New System.Drawing.Size(120, 37)
+        Me.btnBackPurchase.TabIndex = 15
+        Me.btnBackPurchase.Text = "Back"
+        Me.btnBackPurchase.UseVisualStyleBackColor = False
         '
         'ViewPurchases
         '
@@ -41,7 +76,8 @@ Partial Class ViewPurchases
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(340, 440)
-        Me.Controls.Add(Me.ListView1)
+        Me.Controls.Add(Me.btnBackPurchase)
+        Me.Controls.Add(Me.lstvPurchase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "ViewPurchases"
         Me.Text = "View Purchases"
@@ -49,5 +85,9 @@ Partial Class ViewPurchases
 
     End Sub
 
-    Friend WithEvents ListView1 As ListView
+    Friend WithEvents lstvPurchase As ListView
+    Friend WithEvents colDate As ColumnHeader
+    Friend WithEvents colAmount As ColumnHeader
+    Friend WithEvents colDescription As ColumnHeader
+    Friend WithEvents btnBackPurchase As Button
 End Class

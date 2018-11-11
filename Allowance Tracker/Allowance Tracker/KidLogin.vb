@@ -70,7 +70,7 @@ Public Class KidLogin
         ' the user to the Kids.vb screen.
 
         Kids.Show()
-        Me.Hide()
+        Me.Close()
 
     End Sub
 

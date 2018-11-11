@@ -4,7 +4,7 @@
         ' the user to the Parent Registration page.
 
         ParentRegistration.Show()
-        Me.Hide()
+        Me.Close()
 
     End Sub
 
@@ -13,7 +13,7 @@
         ' the user to the Parent Login page.
 
         ParentLogin.Show()
-        Me.Hide()
+        Me.Close()
 
     End Sub
 
@@ -22,7 +22,7 @@
         ' Returns the user to Main.vb
 
         Main.Show()
-        Me.Hide()
+        Me.Close()
 
     End Sub
 End Class

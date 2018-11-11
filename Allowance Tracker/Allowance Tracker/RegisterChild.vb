@@ -51,7 +51,7 @@
         ' the user to the Parent Main screen.
 
         ParentMain.Show()
-        Me.Hide()
+        Me.Close()
 
     End Sub
 

@@ -67,7 +67,7 @@ Public Class TrackPurchases
         ' to the parent main form.
 
         ParentMain.Show()
-        Me.Hide()
+        Me.Close()
 
     End Sub
 
@@ -94,5 +94,6 @@ Public Class TrackPurchases
         cboChooseNamePurchases.DataSource = dt
         cboChooseNamePurchases.DisplayMember = "ChildName"
 
+        conn.Close()
     End Sub
 End Class

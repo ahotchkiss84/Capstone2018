@@ -26,7 +26,8 @@ Partial Class KidMain
         Me.btnCheckAllowanceBalance = New System.Windows.Forms.Button()
         Me.btnCheckPurchaseHistory = New System.Windows.Forms.Button()
         Me.btnReturnHomeKid = New System.Windows.Forms.Button()
-        Me.btnCurrentBalance = New System.Windows.Forms.Button()
+        Me.lblKidWelcome = New System.Windows.Forms.Label()
+        Me.lblAccountBalance = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnCheckAllowanceBalance
@@ -36,7 +37,7 @@ Partial Class KidMain
         Me.btnCheckAllowanceBalance.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCheckAllowanceBalance.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCheckAllowanceBalance.ForeColor = System.Drawing.Color.DimGray
-        Me.btnCheckAllowanceBalance.Location = New System.Drawing.Point(53, 160)
+        Me.btnCheckAllowanceBalance.Location = New System.Drawing.Point(53, 215)
         Me.btnCheckAllowanceBalance.Name = "btnCheckAllowanceBalance"
         Me.btnCheckAllowanceBalance.Size = New System.Drawing.Size(235, 37)
         Me.btnCheckAllowanceBalance.TabIndex = 14
@@ -50,7 +51,7 @@ Partial Class KidMain
         Me.btnCheckPurchaseHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCheckPurchaseHistory.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCheckPurchaseHistory.ForeColor = System.Drawing.Color.DimGray
-        Me.btnCheckPurchaseHistory.Location = New System.Drawing.Point(53, 216)
+        Me.btnCheckPurchaseHistory.Location = New System.Drawing.Point(53, 271)
         Me.btnCheckPurchaseHistory.Name = "btnCheckPurchaseHistory"
         Me.btnCheckPurchaseHistory.Size = New System.Drawing.Size(235, 37)
         Me.btnCheckPurchaseHistory.TabIndex = 15
@@ -64,26 +65,34 @@ Partial Class KidMain
         Me.btnReturnHomeKid.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnReturnHomeKid.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnReturnHomeKid.ForeColor = System.Drawing.Color.DimGray
-        Me.btnReturnHomeKid.Location = New System.Drawing.Point(53, 328)
+        Me.btnReturnHomeKid.Location = New System.Drawing.Point(53, 329)
         Me.btnReturnHomeKid.Name = "btnReturnHomeKid"
         Me.btnReturnHomeKid.Size = New System.Drawing.Size(235, 37)
         Me.btnReturnHomeKid.TabIndex = 16
         Me.btnReturnHomeKid.Text = "Return Home"
         Me.btnReturnHomeKid.UseVisualStyleBackColor = False
         '
-        'btnCurrentBalance
+        'lblKidWelcome
         '
-        Me.btnCurrentBalance.BackColor = System.Drawing.Color.Gainsboro
-        Me.btnCurrentBalance.FlatAppearance.BorderColor = System.Drawing.Color.DimGray
-        Me.btnCurrentBalance.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCurrentBalance.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCurrentBalance.ForeColor = System.Drawing.Color.DimGray
-        Me.btnCurrentBalance.Location = New System.Drawing.Point(53, 272)
-        Me.btnCurrentBalance.Name = "btnCurrentBalance"
-        Me.btnCurrentBalance.Size = New System.Drawing.Size(235, 37)
-        Me.btnCurrentBalance.TabIndex = 17
-        Me.btnCurrentBalance.Text = "Current Account Balance"
-        Me.btnCurrentBalance.UseVisualStyleBackColor = False
+        Me.lblKidWelcome.BackColor = System.Drawing.Color.Transparent
+        Me.lblKidWelcome.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblKidWelcome.ForeColor = System.Drawing.Color.Gainsboro
+        Me.lblKidWelcome.Location = New System.Drawing.Point(1, 150)
+        Me.lblKidWelcome.Name = "lblKidWelcome"
+        Me.lblKidWelcome.Size = New System.Drawing.Size(339, 23)
+        Me.lblKidWelcome.TabIndex = 17
+        Me.lblKidWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblAccountBalance
+        '
+        Me.lblAccountBalance.BackColor = System.Drawing.Color.Transparent
+        Me.lblAccountBalance.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAccountBalance.ForeColor = System.Drawing.Color.Gainsboro
+        Me.lblAccountBalance.Location = New System.Drawing.Point(1, 173)
+        Me.lblAccountBalance.Name = "lblAccountBalance"
+        Me.lblAccountBalance.Size = New System.Drawing.Size(339, 23)
+        Me.lblAccountBalance.TabIndex = 18
+        Me.lblAccountBalance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'KidMain
         '
@@ -92,7 +101,8 @@ Partial Class KidMain
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(340, 440)
-        Me.Controls.Add(Me.btnCurrentBalance)
+        Me.Controls.Add(Me.lblAccountBalance)
+        Me.Controls.Add(Me.lblKidWelcome)
         Me.Controls.Add(Me.btnReturnHomeKid)
         Me.Controls.Add(Me.btnCheckPurchaseHistory)
         Me.Controls.Add(Me.btnCheckAllowanceBalance)
@@ -106,5 +116,6 @@ Partial Class KidMain
     Friend WithEvents btnCheckAllowanceBalance As Button
     Friend WithEvents btnCheckPurchaseHistory As Button
     Friend WithEvents btnReturnHomeKid As Button
-    Friend WithEvents btnCurrentBalance As Button
+    Friend WithEvents lblKidWelcome As Label
+    Friend WithEvents lblAccountBalance As Label
 End Class

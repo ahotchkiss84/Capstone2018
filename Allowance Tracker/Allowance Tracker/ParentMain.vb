@@ -4,7 +4,7 @@
         ' displays the register child form
 
         RegisterChild.Show()
-        Me.Hide()
+        Me.Close()
 
     End Sub
 
@@ -13,7 +13,7 @@
         ' takes the user to the Track Allowance screen.
 
         TrackAllowance.Show()
-        Me.Hide()
+        Me.Close()
 
     End Sub
 
@@ -22,7 +22,7 @@
         ' the user to the Track Purchase screen.
 
         TrackPurchases.Show()
-        Me.Hide()
+        Me.Close()
 
     End Sub
 
@@ -31,7 +31,7 @@
         ' returns the user to the Main screen.
 
         Main.Show()
-        Me.Hide()
+        Me.Close()
 
     End Sub
 End Class

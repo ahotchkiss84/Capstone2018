@@ -65,7 +65,7 @@ Public Class TrackAllowance
         ' returns the user to the parent main form.
 
         ParentMain.Show()
-        Me.Hide()
+        Me.Close()
 
     End Sub
 
@@ -91,6 +91,8 @@ Public Class TrackAllowance
         'Assign DataTable as DataSource.
         cboChildNameAllowance.DataSource = dt
         cboChildNameAllowance.DisplayMember = "ChildName"
+
+        conn.Close()
 
     End Sub
 End Class

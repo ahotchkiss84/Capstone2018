@@ -4,7 +4,7 @@
         ' Takes the user to the kids login screen.
 
         KidLogin.Show()
-        Me.Hide()
+        Me.Close()
 
     End Sub
 
@@ -13,7 +13,7 @@
         ' Returns the user to the main screen.
 
         Main.Show()
-        Me.Hide()
+        Me.Close()
 
     End Sub
 End Class
