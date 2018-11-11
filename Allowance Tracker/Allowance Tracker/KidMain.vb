@@ -3,6 +3,7 @@
         ' This code executes when the user clicks the Return Home button and 
         ' returns the user to the Main screen
 
+        KidLogin.strCurrentUser = ""
         Main.Show()
         Me.Hide()
 

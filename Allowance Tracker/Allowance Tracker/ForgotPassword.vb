@@ -13,7 +13,7 @@
         ' to the ParentLogin form.
 
         ParentLogin.Show()
-        Me.Hide()
+        Me.Close()
 
     End Sub
 
@@ -47,6 +47,7 @@
             cmdUpdate.Parameters.AddWithValue("@ParentPassword", txtNewPasswordForgotPassword.Text)
             cmdUpdate.Parameters.AddWithValue("@ParentUser", txtUsernameForgotPassword.Text)
             cmdUpdate.ExecuteNonQuery()
+            lblError.Visible = True
             lblError.Text = "Your password has been changed!"
             txtUsernameForgotPassword.Text = ""
             txtNewPasswordForgotPassword.Text = ""

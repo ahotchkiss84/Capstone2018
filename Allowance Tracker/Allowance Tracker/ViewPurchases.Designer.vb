@@ -23,7 +23,16 @@ Partial Class ViewPurchases
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ViewPurchases))
+        Me.ListView1 = New System.Windows.Forms.ListView()
         Me.SuspendLayout()
+        '
+        'ListView1
+        '
+        Me.ListView1.Location = New System.Drawing.Point(13, 146)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(315, 97)
+        Me.ListView1.TabIndex = 0
+        Me.ListView1.UseCompatibleStateImageBehavior = False
         '
         'ViewPurchases
         '
@@ -32,10 +41,13 @@ Partial Class ViewPurchases
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(340, 440)
+        Me.Controls.Add(Me.ListView1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "ViewPurchases"
         Me.Text = "View Purchases"
         Me.ResumeLayout(False)
 
     End Sub
+
+    Friend WithEvents ListView1 As ListView
 End Class

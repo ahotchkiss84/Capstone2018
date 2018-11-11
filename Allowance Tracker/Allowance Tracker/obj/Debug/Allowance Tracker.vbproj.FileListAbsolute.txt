@@ -28,7 +28,6 @@ C:\Users\amackellar\source\repos\Allowance Tracker\Allowance Tracker\bin\Debug\n
 C:\Users\amackellar\source\repos\Allowance Tracker\Allowance Tracker\bin\Debug\nunit.framework.xml
 C:\Users\amackellar\source\repos\Allowance Tracker\Allowance Tracker\obj\Debug\Allowance Tracker.vbproj.CopyComplete
 C:\Users\amackellar\source\repos\Allowance Tracker\Allowance Tracker\obj\Debug\Allowance_Tracker.ForgotPassword.resources
-C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\bin\Debug\AllowanceTracker1.mdb
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\bin\Debug\Allowance Tracker.exe.config
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\bin\Debug\Allowance Tracker.exe
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\bin\Debug\Allowance Tracker.pdb
