@@ -5,6 +5,7 @@
         txtNewPasswordForgotPassword.Clear()
         txtUsernameForgotPassword.Clear()
         txtUsernameForgotPassword.Focus()
+        lblError.Text = ""
 
     End Sub
 
@@ -51,6 +52,8 @@
             lblError.Text = "Your password has been changed!"
             txtUsernameForgotPassword.Text = ""
             txtNewPasswordForgotPassword.Text = ""
+
+            conn.Close()
 
         End If
 

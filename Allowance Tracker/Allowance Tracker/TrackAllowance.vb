@@ -46,6 +46,7 @@ Public Class TrackAllowance
                 Me.txtNoteAllowance.Text = ""
                 Exit Sub
             End With
+            cn.Close()
         End If
 
     End Sub

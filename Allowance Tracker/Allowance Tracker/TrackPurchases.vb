@@ -48,6 +48,7 @@ Public Class TrackPurchases
                 Me.txtItemCostPurchases.Text = ""
                 Me.txtNotePurchases.Text = ""
                 Exit Sub
+                cn.Close()
             End With
         End If
     End Sub

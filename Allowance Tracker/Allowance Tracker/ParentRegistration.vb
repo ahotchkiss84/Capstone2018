@@ -41,7 +41,9 @@
                 Me.txtUsernameParentReg.Text = ""
                 Me.txtPasswordParentReg.Text = ""
                 Exit Sub
+
             End With
+            cn.Close()
         End If
     End Sub
 

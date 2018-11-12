@@ -86,6 +86,7 @@ Partial Class ForgotPassword
         Me.txtNewPasswordForgotPassword.Name = "txtNewPasswordForgotPassword"
         Me.txtNewPasswordForgotPassword.Size = New System.Drawing.Size(192, 26)
         Me.txtNewPasswordForgotPassword.TabIndex = 11
+        Me.txtNewPasswordForgotPassword.UseSystemPasswordChar = True
         '
         'btnSubmitForgotPassword
         '
@@ -142,6 +143,7 @@ Partial Class ForgotPassword
         '
         'ForgotPassword
         '
+        Me.AcceptButton = Me.btnSubmitForgotPassword
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Allowance_Tracker.My.Resources.Resources.BoCbgmain

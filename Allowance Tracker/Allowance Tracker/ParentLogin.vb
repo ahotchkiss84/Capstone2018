@@ -47,6 +47,7 @@
                 MessageBox.Show("Failed to connect to Database..", "Database Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
             End Try
+            conn.Close()
         End If
     End Sub
 

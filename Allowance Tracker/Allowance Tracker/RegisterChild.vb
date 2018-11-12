@@ -34,7 +34,6 @@
                 Exit Sub
             End With
         End If
-
     End Sub
 
     Private Sub btnClearChildReg_Click(sender As Object, e As EventArgs) Handles btnClearChildReg.Click
@@ -52,6 +51,7 @@
 
         ParentMain.Show()
         Me.Close()
+        cn.Close()
 
     End Sub
 
