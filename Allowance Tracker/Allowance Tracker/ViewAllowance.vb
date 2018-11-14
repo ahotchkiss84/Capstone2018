@@ -10,14 +10,8 @@ Public Class ViewAllowance
         Dim ds As New DataSet
         Dim itemcoll(100) As String
 
-        Dim conn As New System.Data.OleDb.OleDbConnection()
-        conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.CommonAppDataPath & "\AllowanceTracker.mdb"
-
         Dim sql As String = "SELECT AllowanceDate, AllowanceAmount, AllowanceNote FROM tblAllowance WHERE ChildsName='" & KidLogin.strCurrentUser & "'"
-        Dim sqlCom As New System.Data.OleDb.OleDbCommand(sql)
-
-        sqlCom.Connection = conn
-        conn.Open()
+        Dim sqlCom As New System.Data.OleDb.OleDbCommand(sql, cn)
 
         Dim sqlRead As System.Data.OleDb.OleDbDataReader = sqlCom.ExecuteReader()
 
@@ -31,7 +25,7 @@ Public Class ViewAllowance
             Me.lstvAllowance.Items.Add(lvi)
         End While
 
-        conn.Close()
+        cn.Close()
 
     End Sub
 

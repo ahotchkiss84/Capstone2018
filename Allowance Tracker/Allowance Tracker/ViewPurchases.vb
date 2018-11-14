@@ -11,14 +11,11 @@ Public Class ViewPurchases
         Dim ds As New DataSet
         Dim itemcoll(100) As String
 
-        Dim conn As New System.Data.OleDb.OleDbConnection()
-        conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.CommonAppDataPath & "\AllowanceTracker.mdb"
 
         Dim sql As String = "SELECT PurchaseDate, PurchaseAmount, ItemDescription FROM tblPurchases WHERE ChildsName='" & KidLogin.strCurrentUser & "'"
-        Dim sqlCom As New System.Data.OleDb.OleDbCommand(sql)
+        Dim sqlCom As New System.Data.OleDb.OleDbCommand(sql, cn)
 
-        sqlCom.Connection = conn
-        conn.Open()
+        sqlCom.Connection = cn
 
         Dim sqlRead As System.Data.OleDb.OleDbDataReader = sqlCom.ExecuteReader()
 
@@ -31,9 +28,7 @@ Public Class ViewPurchases
             Dim lvi As New ListViewItem(row)
             Me.lstvPurchase.Items.Add(lvi)
         End While
-
-        conn.Close()
-
+        cn.Close()
     End Sub
 
     Private Sub btnBackPurchase_Click(sender As Object, e As EventArgs) Handles btnBackPurchase.Click
