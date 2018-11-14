@@ -51,6 +51,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_A1BEE6E37E3D4763B6DC6F47D3336F03"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_C86C38362950BC68A4D6875FAE82A40B"
         "OwnerKey" = "8:_07A042ADDF584FA79583912CF061AE78"
         "MsmSig" = "8:_UNDEFINED"
@@ -250,6 +256,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A1BEE6E37E3D4763B6DC6F47D3336F03"
+            {
+            "SourcePath" = "8:..\\Allowance Tracker\\Resources\\AllowanceTracker.mdb"
+            "TargetName" = "8:AllowanceTracker.mdb"
+            "Tag" = "8:"
+            "Folder" = "8:_31A4AAC86CCB4D0FA45218435A7134EB"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C86C38362950BC68A4D6875FAE82A40B"
             {
             "AssemblyRegister" = "3:1"
@@ -319,6 +345,17 @@
                 {
                 }
             }
+            "{1525181F-901A-416C-8A58-119130FE478E}:_31A4AAC86CCB4D0FA45218435A7134EB"
+            {
+            "Name" = "8:#1918"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:PersonalFolder"
+                "Folders"
+                {
+                }
+            }
             "{1525181F-901A-416C-8A58-119130FE478E}:_96D34AB435514695B76985B20661B017"
             {
             "Name" = "8:#1919"
@@ -358,7 +395,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:AllowanceTrackerSetup1"
         "ProductCode" = "8:{18F3E909-A0E5-4A9D-9D35-EB5EF83B9059}"
-        "PackageCode" = "8:{55A7E9A0-5E03-4353-9953-F6803030E67B}"
+        "PackageCode" = "8:{25829201-5AC3-41D2-9B4E-2BBE73368626}"
         "UpgradeCode" = "8:{4FA1CCB8-5F8B-4F6A-BD0E-16D41E2A39F1}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
