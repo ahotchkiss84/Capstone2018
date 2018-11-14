@@ -23,4 +23,12 @@
         Close()
 
     End Sub
+
+    Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' This code executes on startup and creates the database if it does not exist.
+
+        If Not IO.File.Exists(Application.CommonAppDataPath & "\AllowanceTracker.mdb") Then
+            IO.File.WriteAllBytes(Application.CommonAppDataPath & "\AllowanceTracker.mdb", My.Resources.AllowanceTracker)
+        End If
+    End Sub
 End Class

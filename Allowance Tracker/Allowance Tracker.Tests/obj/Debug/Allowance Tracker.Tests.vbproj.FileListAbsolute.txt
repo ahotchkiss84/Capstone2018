@@ -1,0 +1,4 @@
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance Tracker.Tests.vbprojAssemblyReference.cache
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance_Tracker.Tests.Resources.resources
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance Tracker.Tests.vbproj.GenerateResource.cache
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance Tracker.Tests.vbproj.CoreCompileInputs.cache
