@@ -42,12 +42,13 @@
         Else
             'This is where the change password code goes
             Dim cmdText = "UPDATE tblUserInformation SET ParentPassword = @ParentPassword " &
-                      "WHERE ParentUser = @ParentUser AND ParentPassword = @ParentPassword"
+                      "WHERE ParentUser = @ParentUser"
             dr.Close()
             Dim cmdUpdate As New System.Data.OleDb.OleDbCommand(cmdText, conn)
             cmdUpdate.Parameters.AddWithValue("@ParentPassword", txtNewPasswordForgotPassword.Text)
             cmdUpdate.Parameters.AddWithValue("@ParentUser", txtUsernameForgotPassword.Text)
             cmdUpdate.ExecuteNonQuery()
+
             lblError.Visible = True
             lblError.Text = "Your password has been changed!"
             txtUsernameForgotPassword.Text = ""

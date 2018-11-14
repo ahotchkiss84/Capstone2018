@@ -2,3 +2,22 @@ C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tr
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance_Tracker.Tests.Resources.resources
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance Tracker.Tests.vbproj.GenerateResource.cache
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance Tracker.Tests.vbproj.CoreCompileInputs.cache
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\bin\Debug\Allowance Tracker.Tests.dll
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\bin\Debug\Allowance Tracker.Tests.pdb
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\bin\Debug\Allowance Tracker.Tests.xml
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\bin\Debug\Allowance Tracker.exe
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\bin\Debug\Castle.Core.dll
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\bin\Debug\nunit.framework.dll
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\bin\Debug\TestStack.White.dll
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\bin\Debug\Allowance Tracker.pdb
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\bin\Debug\Allowance Tracker.xml
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\bin\Debug\Allowance Tracker.exe.config
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\bin\Debug\Castle.Core.xml
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\bin\Debug\nunit.framework.pdb
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\bin\Debug\nunit.framework.xml
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\bin\Debug\TestStack.White.pdb
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\bin\Debug\TestStack.White.xml
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance Tracker.Tests.vbproj.CopyComplete
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance Tracker.Tests.dll
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance Tracker.Tests.xml
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance Tracker.Tests.pdb
