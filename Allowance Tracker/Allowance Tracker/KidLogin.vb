@@ -18,7 +18,7 @@ Public Class KidLogin
 
         Else
             Dim conn As New System.Data.OleDb.OleDbConnection()
-            conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.StartupPath & "\AllowanceTracker1.mdb"
+            conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.CommonAppDataPath & "\AllowanceTracker.mdb"
             Try
                 Dim sql As String = "SELECT * FROM tblChildInformation WHERE ChildName='" & cboChooseName.Text & "' AND ChildPassword = '" & txtPasswordKidLogin.Text & "'"
                 Dim sqlCom As New System.Data.OleDb.OleDbCommand(sql)
@@ -80,7 +80,7 @@ Public Class KidLogin
         ' on form load
 
         Dim conn As New System.Data.OleDb.OleDbConnection()
-        conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.StartupPath & "\AllowanceTracker1.mdb"
+        conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.CommonAppDataPath & "\AllowanceTracker.mdb"
         Dim sda As New System.Data.OleDb.OleDbDataAdapter("SELECT ChildName FROM tblChildInformation", conn)
         'Fill the DataTable with records from Table.
         Dim dt As DataTable = New DataTable()

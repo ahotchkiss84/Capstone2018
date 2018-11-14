@@ -14,7 +14,7 @@
 
         Else
             Dim conn As New System.Data.OleDb.OleDbConnection()
-            conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.StartupPath & "\AllowanceTracker1.mdb"
+            conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.CommonAppDataPath & "\AllowanceTracker.mdb"
             Try
                 Dim sql As String = "SELECT * FROM tblUserInformation WHERE ParentUser='" & txtUsernameParentLogin.Text & "' AND ParentPassword = '" & txtPasswordParentLogin.Text & "'"
                 Dim sqlCom As New System.Data.OleDb.OleDbCommand(sql)

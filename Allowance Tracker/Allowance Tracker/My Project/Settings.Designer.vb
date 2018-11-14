@@ -58,7 +58,7 @@ Namespace My
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
          Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\bin\Debug\AllowanceT"& _ 
-            "racker1.mdb")>  _
+            "racker.mdb")>  _
         Public ReadOnly Property AllowanceTracker1ConnectionString() As String
             Get
                 Return CType(Me("AllowanceTracker1ConnectionString"),String)
@@ -68,8 +68,8 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\AllowanceTracker1.md"& _ 
-            "b")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\AllowanceTracker.mdb"& _ 
+            "")>  _
         Public ReadOnly Property AllowanceTracker1ConnectionString1() As String
             Get
                 Return CType(Me("AllowanceTracker1ConnectionString1"),String)

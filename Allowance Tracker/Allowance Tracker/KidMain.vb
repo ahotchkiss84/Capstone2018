@@ -41,12 +41,17 @@ Public Class KidMain
         Dim itemcoll(100) As String
 
         Dim conn As New System.Data.OleDb.OleDbConnection()
-        conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.StartupPath & "\AllowanceTracker1.mdb"
+        conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.CommonAppDataPath & "\AllowanceTracker.mdb"
 
-        Dim sql As String = "SELECT (SELECT Sum(AllowanceAmount)
-FROM tblAllowance WHERE ChildsName = '" & KidLogin.strCurrentUser & "') 
-- (SELECT Sum(PurchaseAmount)
-FROM tblPurchases WHERE ChildsName = '" & KidLogin.strCurrentUser & "') FROM Dual"
+        Dim sql As String = "SELECT IIF(
+   ISNull((SELECT SUM(AllowanceAmount) FROM tblAllowance WHERE ChildsName = '" & KidLogin.strCurrentUser & "')),
+   0,
+   (SELECT SUM(AllowanceAmount) FROM tblAllowance WHERE ChildsName = '" & KidLogin.strCurrentUser & "'))
+- IIF(
+   ISNull((SELECT Sum(PurchaseAmount) FROM tblPurchases WHERE ChildsName = '" & KidLogin.strCurrentUser & "')),
+   0,
+   (SELECT Sum(PurchaseAmount) FROM tblPurchases WHERE ChildsName = '" & KidLogin.strCurrentUser & "'))
+FROM Dual;"
         Dim sqlCom As New System.Data.OleDb.OleDbCommand(sql)
 
         sqlCom.Connection = conn
@@ -56,7 +61,7 @@ FROM tblPurchases WHERE ChildsName = '" & KidLogin.strCurrentUser & "') FROM Dua
 
         If sqlRead.Read() Then
 
-            lblAccountBalance.Text = "Your current account balance is $ " & sqlRead.Item(0)
+            lblAccountBalance.Text = "Your current account balance is $" & sqlRead.Item(0)
 
         End If
 

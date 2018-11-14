@@ -26,7 +26,7 @@
         Dim sql = "SELECT ParentUser FROM tblUserInformation"
         Dim cmd As New System.Data.OleDb.OleDbCommand(sql)
         cmd = New System.Data.OleDb.OleDbCommand(sql, conn)
-        conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.StartupPath & "\AllowanceTracker1.mdb"
+        conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.CommonAppDataPath & "\AllowanceTracker.mdb"
         conn.Open()
         Dim dr As System.Data.OleDb.OleDbDataReader = cmd.ExecuteReader
 

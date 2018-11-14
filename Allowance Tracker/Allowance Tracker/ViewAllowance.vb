@@ -10,7 +10,7 @@ Public Class ViewAllowance
         Dim itemcoll(100) As String
 
         Dim conn As New System.Data.OleDb.OleDbConnection()
-        conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.StartupPath & "\AllowanceTracker1.mdb"
+        conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.CommonAppDataPath & "\AllowanceTracker.mdb"
 
         Dim sql As String = "SELECT AllowanceDate, AllowanceAmount, AllowanceNote FROM tblAllowance WHERE ChildsName='" & KidLogin.strCurrentUser & "'"
         Dim sqlCom As New System.Data.OleDb.OleDbCommand(sql)

@@ -12,7 +12,7 @@ Module modConnection
         cn = New OleDb.OleDbConnection
         With cn
             'Provider must be Microsoft.Jet.OLEDB.4.0, find the access file, and test the connection
-            .ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.StartupPath & "\AllowanceTracker1.mdb"
+            .ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.CommonAppDataPath & "\AllowanceTracker.mdb"
             .Open()
         End With
     End Sub
