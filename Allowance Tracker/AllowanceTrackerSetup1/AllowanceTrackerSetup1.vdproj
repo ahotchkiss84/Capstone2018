@@ -3,7 +3,7 @@
 "VSVersion" = "3:800"
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
-"ProjectName" = "8:AllowanceTrackerSetup1"
+"ProjectName" = "8:AllowanceTrackerSetup"
 "LanguageId" = "3:1033"
 "CodePage" = "3:1252"
 "UILanguageId" = "3:1033"
@@ -16,12 +16,6 @@
         "Entry"
         {
         "MsmKey" = "8:_07A042ADDF584FA79583912CF061AE78"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_2222E93CBFAF4DA1B6FB142C40F583B6"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -51,12 +45,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_A1BEE6E37E3D4763B6DC6F47D3336F03"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_C86C38362950BC68A4D6875FAE82A40B"
         "OwnerKey" = "8:_07A042ADDF584FA79583912CF061AE78"
         "MsmSig" = "8:_UNDEFINED"
@@ -65,12 +53,6 @@
         {
         "MsmKey" = "8:_EA30EB5BC9EE6EB79DC5831A1E36F63D"
         "OwnerKey" = "8:_7F24F2952ECD4C6DA7A440ED3064BF48"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C86C38362950BC68A4D6875FAE82A40B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -91,6 +73,12 @@
         "OwnerKey" = "8:_88DF7454F2DA0F075613A24E10E38082"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_C86C38362950BC68A4D6875FAE82A40B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -99,7 +87,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\AllowanceTrackerSetup1.msi"
+        "OutputFilename" = "8:Debug\\AllowanceTrackerSetup.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -109,6 +97,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -125,6 +129,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -154,26 +166,6 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2222E93CBFAF4DA1B6FB142C40F583B6"
-            {
-            "SourcePath" = "8:..\\Allowance Tracker\\Resources\\AllowanceTracker.mdb"
-            "TargetName" = "8:AllowanceTracker.mdb"
-            "Tag" = "8:"
-            "Folder" = "8:_03087781FB394048B34E60134AE493C0"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_26DDB328F09E95FD26FA4073428539EA"
             {
             "AssemblyRegister" = "3:1"
@@ -201,7 +193,7 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:FALSE"
+            "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -256,26 +248,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A1BEE6E37E3D4763B6DC6F47D3336F03"
-            {
-            "SourcePath" = "8:..\\Allowance Tracker\\Resources\\AllowanceTracker.mdb"
-            "TargetName" = "8:AllowanceTracker.mdb"
-            "Tag" = "8:"
-            "Folder" = "8:_31A4AAC86CCB4D0FA45218435A7134EB"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C86C38362950BC68A4D6875FAE82A40B"
             {
             "AssemblyRegister" = "3:1"
@@ -323,7 +295,7 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:FALSE"
+            "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -335,7 +307,7 @@
         {
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_03087781FB394048B34E60134AE493C0"
             {
-            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:[ProgramFiles64Folder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -354,6 +326,17 @@
             "Property" = "8:PersonalFolder"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_9691C5DAF3524A81A987903E3D700149"
+                    {
+                    "Name" = "8:Allowance Tracker"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_77CB70D0089A4C478F10A3A6F4E4C665"
+                        "Folders"
+                        {
+                        }
+                    }
                 }
             }
             "{1525181F-901A-416C-8A58-119130FE478E}:_96D34AB435514695B76985B20661B017"
@@ -365,6 +348,17 @@
             "Property" = "8:ProgramMenuFolder"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_18CC380AD9C84783B15EE4BDD2D9ED5D"
+                    {
+                    "Name" = "8:Allowance Tracker"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_2156724A09D947C6BCCADB0BD74B1519"
+                        "Folders"
+                        {
+                        }
+                    }
                 }
             }
             "{1525181F-901A-416C-8A58-119130FE478E}:_98F2300DB1BB45CB966D43265A4DA4CA"
@@ -393,20 +387,20 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:AllowanceTrackerSetup1"
+        "ProductName" = "8:AllowanceTrackerSetup"
         "ProductCode" = "8:{18F3E909-A0E5-4A9D-9D35-EB5EF83B9059}"
-        "PackageCode" = "8:{25829201-5AC3-41D2-9B4E-2BBE73368626}"
+        "PackageCode" = "8:{FDB7CF7A-F575-4F85-846B-77C79E28B394}"
         "UpgradeCode" = "8:{4FA1CCB8-5F8B-4F6A-BD0E-16D41E2A39F1}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
-        "InstallAllUsers" = "11:FALSE"
+        "InstallAllUsers" = "11:TRUE"
         "ProductVersion" = "8:1.0.0"
         "Manufacturer" = "8:Hotchkiss Creative"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:AllowanceTrackerSetup1"
+        "Title" = "8:AllowanceTrackerSetup"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Alicea Hotchkiss"
         "Keywords" = "8:"
@@ -416,7 +410,7 @@
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
-        "TargetPlatform" = "3:0"
+        "TargetPlatform" = "3:1"
         "PreBuildEvent" = "8:"
         "PostBuildEvent" = "8:"
         "RunPostBuildEvent" = "3:0"
@@ -515,6 +509,20 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_B914DAA83E9A4E59A8511CE12300961E"
+            {
+            "Name" = "8:Allowance Tracker"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_07A042ADDF584FA79583912CF061AE78"
+            "Folder" = "8:_18CC380AD9C84783B15EE4BDD2D9ED5D"
+            "WorkingFolder" = "8:_03087781FB394048B34E60134AE493C0"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {

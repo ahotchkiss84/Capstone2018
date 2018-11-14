@@ -1,7 +1,4 @@
-C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance Tracker.Tests.vbprojAssemblyReference.cache
-C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance_Tracker.Tests.Resources.resources
-C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance Tracker.Tests.vbproj.GenerateResource.cache
-C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance Tracker.Tests.vbproj.CoreCompileInputs.cache
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance Tracker.Tests.pdb
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\bin\Debug\Allowance Tracker.Tests.dll
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\bin\Debug\Allowance Tracker.Tests.pdb
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\bin\Debug\Allowance Tracker.Tests.xml
@@ -17,7 +14,10 @@ C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tr
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\bin\Debug\nunit.framework.xml
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\bin\Debug\TestStack.White.pdb
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\bin\Debug\TestStack.White.xml
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance Tracker.Tests.vbprojAssemblyReference.cache
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance_Tracker.Tests.Resources.resources
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance Tracker.Tests.vbproj.GenerateResource.cache
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance Tracker.Tests.vbproj.CoreCompileInputs.cache
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance Tracker.Tests.vbproj.CopyComplete
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance Tracker.Tests.dll
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance Tracker.Tests.xml
-C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker.Tests\obj\Debug\Allowance Tracker.Tests.pdb

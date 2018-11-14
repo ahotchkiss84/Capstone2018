@@ -28,14 +28,18 @@ C:\Users\amackellar\source\repos\Allowance Tracker\Allowance Tracker\bin\Debug\n
 C:\Users\amackellar\source\repos\Allowance Tracker\Allowance Tracker\bin\Debug\nunit.framework.xml
 C:\Users\amackellar\source\repos\Allowance Tracker\Allowance Tracker\obj\Debug\Allowance Tracker.vbproj.CopyComplete
 C:\Users\amackellar\source\repos\Allowance Tracker\Allowance Tracker\obj\Debug\Allowance_Tracker.ForgotPassword.resources
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\obj\Debug\Allowance_Tracker.ParentMain.resources
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\bin\Debug\Allowance Tracker.exe.config
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\bin\Debug\Allowance Tracker.exe
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\bin\Debug\Allowance Tracker.pdb
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\bin\Debug\Allowance Tracker.xml
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\bin\Debug\Castle.Core.dll
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\bin\Debug\nunit.framework.dll
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\bin\Debug\Castle.Core.xml
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\bin\Debug\nunit.framework.pdb
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\bin\Debug\nunit.framework.xml
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\obj\Debug\Allowance Tracker.vbproj.ResolveComReference.cache
+C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\obj\Debug\Allowance Tracker.g.resources
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\obj\Debug\Allowance_Tracker.ForgotPassword.resources
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\obj\Debug\Allowance_Tracker.KidLogin.resources
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\obj\Debug\Allowance_Tracker.KidMain.resources
@@ -43,7 +47,6 @@ C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tr
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\obj\Debug\Allowance_Tracker.ParentLogin.resources
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\obj\Debug\Allowance_Tracker.Main.resources
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\obj\Debug\Allowance_Tracker.Resources.resources
-C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\obj\Debug\Allowance_Tracker.ParentMain.resources
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\obj\Debug\Allowance_Tracker.ParentRegistration.resources
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\obj\Debug\Allowance_Tracker.Parents.resources
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\obj\Debug\Allowance_Tracker.RegisterChild.resources
@@ -57,7 +60,4 @@ C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tr
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\obj\Debug\Allowance Tracker.exe
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\obj\Debug\Allowance Tracker.xml
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\obj\Debug\Allowance Tracker.pdb
-C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\obj\Debug\Allowance Tracker.g.resources
-C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\bin\Debug\Castle.Core.dll
-C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\bin\Debug\Castle.Core.xml
 C:\Users\amackellar\Documents\GitHub\Capstone2018\Allowance Tracker\Allowance Tracker\obj\Debug\Allowance Tracker.vbprojAssemblyReference.cache
