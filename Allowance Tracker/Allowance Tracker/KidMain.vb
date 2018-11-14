@@ -32,6 +32,8 @@ Public Class KidMain
     Private Sub KidMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' this event handler executes on load. Displays the welcome message and current account balance.
 
+        Me.Bounds = Main.Bounds
+
         lblKidWelcome.Text = "Hello, " & KidLogin.strCurrentUser & "!"
 
         Call connection()

@@ -96,7 +96,7 @@ Partial Class Parents
         Me.Controls.Add(Me.btnRegisterParent)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Parents"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Parents"
         Me.ResumeLayout(False)
         Me.PerformLayout()

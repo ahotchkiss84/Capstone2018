@@ -75,6 +75,8 @@ Public Class TrackAllowance
 
         Call connection()
 
+        Me.Bounds = Main.Bounds
+
         ' This code populates the datatable for the combo box and connects to the database
         ' on form load
 

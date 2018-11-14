@@ -98,6 +98,7 @@ Partial Class ParentMain
         Me.Controls.Add(Me.btnNewChild)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "ParentMain"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Parent Main"
         Me.ResumeLayout(False)
 

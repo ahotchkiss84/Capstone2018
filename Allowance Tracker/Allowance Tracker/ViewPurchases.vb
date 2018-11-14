@@ -5,6 +5,8 @@ Public Class ViewPurchases
 
         Call connection()
 
+        Me.Bounds = Main.Bounds
+
         Dim adapter As New OleDbDataAdapter
         Dim ds As New DataSet
         Dim itemcoll(100) As String

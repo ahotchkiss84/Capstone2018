@@ -161,6 +161,7 @@ Partial Class RegisterChild
         Me.Controls.Add(Me.lblHeading)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "RegisterChild"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Register Child"
         Me.ResumeLayout(False)
         Me.PerformLayout()

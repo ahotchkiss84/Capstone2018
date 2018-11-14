@@ -97,16 +97,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="NewChildAccountTest.vb" />
-    <Compile Include="NoAccessTest.vb" />
     <Compile Include="ParentLoginTest.vb" />
     <Compile Include="ReturnHomeTest.vb" />
     <Compile Include="SeparateChildLoginsTest.vb" />
     <Compile Include="SeparateLoginsTest.vb" />
-    <Compile Include="SimultaenousScreenUpdateTest.vb" />
-    <Compile Include="SimultaneousUsersTest.vb" />
     <Compile Include="TrackAllowanceTest.vb" />
     <Compile Include="TrackPurchaseTest.vb" />
-    <Compile Include="UpdatesPersistTest.vb" />
     <Compile Include="UserRegistrationTest.vb" />
   </ItemGroup>
   <ItemGroup>

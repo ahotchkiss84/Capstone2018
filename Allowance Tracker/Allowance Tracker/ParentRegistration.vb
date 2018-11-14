@@ -71,5 +71,6 @@
 
         Call connection()
 
+        Me.Bounds = Main.Bounds
     End Sub
 End Class

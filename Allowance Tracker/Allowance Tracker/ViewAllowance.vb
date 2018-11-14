@@ -3,6 +3,7 @@
 Public Class ViewAllowance
     Private Sub ViewAllowance_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        Me.Bounds = Main.Bounds
         Call connection()
 
         Dim adapter As New OleDbDataAdapter

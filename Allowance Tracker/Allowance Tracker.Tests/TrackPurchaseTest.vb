@@ -47,7 +47,7 @@ Namespace Allowance_Tracker.Tests
 
             Dim windowTrack As Window = app.GetWindow("Track Purchases", InitializeOption.NoCache)
 
-            Dim cboUserObj As ComboBox = windowTrack.Get(Of ComboBox)("choChooseNamePurchases")
+            Dim cboUserObj As ComboBox = windowTrack.Get(Of ComboBox)("cboChooseNamePurchases")
             cboUserObj.Select("TestKid")
 
             Dim txtAmtObj As TextBox = windowTrack.Get(Of TextBox)("txtItemCostPurchases")
@@ -59,7 +59,10 @@ Namespace Allowance_Tracker.Tests
             Dim buttonSubmitPurchaseObj As Button = windowTrack.Get(Of Button)("btnSubmitPurchases")
             buttonSubmitPurchaseObj.Click()
 
-            Dim lblNote As Label = windowTrack.Get(Of Label)("")
+            Dim lblNote As Label = windowTrack.Get(Of Label)("lblErrorPurchases")
+            lblNote.Equals("Purchase Information Saved!")
+
+            Assert.IsNotNull(lblNote)
 
             app.Close()
         End Sub

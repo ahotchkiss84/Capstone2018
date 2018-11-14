@@ -79,6 +79,8 @@ Public Class KidLogin
         ' This code populates the datatable for the combo box and connects to the database
         ' on form load
 
+        Me.Bounds = Main.Bounds
+
         Dim conn As New System.Data.OleDb.OleDbConnection()
         conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.CommonAppDataPath & "\AllowanceTracker.mdb"
         Dim sda As New System.Data.OleDb.OleDbDataAdapter("SELECT ChildName FROM tblChildInformation", conn)

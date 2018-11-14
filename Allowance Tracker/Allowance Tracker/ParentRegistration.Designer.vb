@@ -186,7 +186,7 @@ Partial Class ParentRegistration
         Me.Controls.Add(Me.lblHeadingParentReg)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "ParentRegistration"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Parent Registration"
         Me.ResumeLayout(False)
         Me.PerformLayout()

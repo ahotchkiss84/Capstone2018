@@ -198,6 +198,7 @@ Partial Class TrackPurchases
         Me.Controls.Add(Me.lblChildNamePurchases)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "TrackPurchases"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Track Purchases"
         Me.ResumeLayout(False)
         Me.PerformLayout()

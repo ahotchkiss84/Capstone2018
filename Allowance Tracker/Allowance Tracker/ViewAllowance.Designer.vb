@@ -78,6 +78,7 @@ Partial Class ViewAllowance
         Me.Controls.Add(Me.btnBackAllowance)
         Me.Controls.Add(Me.lstvAllowance)
         Me.Name = "ViewAllowance"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "View Allowance"
         Me.ResumeLayout(False)
 
