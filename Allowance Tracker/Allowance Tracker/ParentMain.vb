@@ -34,4 +34,8 @@
         Me.Close()
 
     End Sub
+
+    Private Sub ParentMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Bounds = Main.Bounds
+    End Sub
 End Class

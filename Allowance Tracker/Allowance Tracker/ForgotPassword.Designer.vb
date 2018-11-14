@@ -159,6 +159,7 @@ Partial Class ForgotPassword
         Me.Controls.Add(Me.lblUsernameForgotPassword)
         Me.Controls.Add(Me.lblHeadingForgotPassword)
         Me.Name = "ForgotPassword"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "ForgotPassword"
         Me.ResumeLayout(False)
         Me.PerformLayout()

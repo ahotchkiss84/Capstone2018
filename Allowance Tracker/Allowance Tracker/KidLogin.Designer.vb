@@ -162,6 +162,7 @@ Partial Class KidLogin
         Me.Controls.Add(Me.lblHeading)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "KidLogin"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Kid Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()

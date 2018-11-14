@@ -108,6 +108,7 @@ Partial Class KidMain
         Me.Controls.Add(Me.btnCheckAllowanceBalance)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "KidMain"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Kid Main"
         Me.ResumeLayout(False)
 

@@ -80,6 +80,7 @@ Partial Class ViewPurchases
         Me.Controls.Add(Me.lstvPurchase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "ViewPurchases"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "View Purchases"
         Me.ResumeLayout(False)
 

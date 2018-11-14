@@ -73,6 +73,8 @@ Public Class TrackAllowance
     Private Sub TrackAllowance_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Calls the connection method for the access database
 
+        Me.Bounds = Main.Bounds
+
         Call connection()
 
         ' This code populates the datatable for the combo box and connects to the database

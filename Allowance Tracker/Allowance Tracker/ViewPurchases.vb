@@ -3,20 +3,21 @@
 Public Class ViewPurchases
     Private Sub ViewPurchases_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        Me.Bounds = Main.Bounds
+
         Call connection()
 
         Dim adapter As New OleDbDataAdapter
         Dim ds As New DataSet
         Dim itemcoll(100) As String
 
-        Dim conn As New System.Data.OleDb.OleDbConnection()
-        conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.CommonAppDataPath & "\AllowanceTracker.mdb"
+
 
         Dim sql As String = "SELECT PurchaseDate, PurchaseAmount, ItemDescription FROM tblPurchases WHERE ChildsName='" & KidLogin.strCurrentUser & "'"
         Dim sqlCom As New System.Data.OleDb.OleDbCommand(sql)
 
-        sqlCom.Connection = conn
-        conn.Open()
+        sqlCom.Connection = cn
+        cn.Open()
 
         Dim sqlRead As System.Data.OleDb.OleDbDataReader = sqlCom.ExecuteReader()
 
@@ -30,7 +31,7 @@ Public Class ViewPurchases
             Me.lstvPurchase.Items.Add(lvi)
         End While
 
-        conn.Close()
+        cn.Close()
 
     End Sub
 

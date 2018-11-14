@@ -32,6 +32,10 @@ Public Class KidMain
     Private Sub KidMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' this event handler executes on load. Displays the welcome message and current account balance.
 
+        Call connection()
+
+        Me.Bounds = Main.Bounds
+
         lblKidWelcome.Text = "Hello, " & KidLogin.strCurrentUser & "!"
 
         Call connection()
@@ -39,9 +43,6 @@ Public Class KidMain
         Dim adapter As New OleDbDataAdapter
         Dim ds As New DataSet
         Dim itemcoll(100) As String
-
-        Dim conn As New System.Data.OleDb.OleDbConnection()
-        conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.CommonAppDataPath & "\AllowanceTracker.mdb"
 
         Dim sql As String = "SELECT IIF(
    ISNull((SELECT SUM(AllowanceAmount) FROM tblAllowance WHERE ChildsName = '" & KidLogin.strCurrentUser & "')),
@@ -54,8 +55,8 @@ Public Class KidMain
 FROM Dual;"
         Dim sqlCom As New System.Data.OleDb.OleDbCommand(sql)
 
-        sqlCom.Connection = conn
-        conn.Open()
+        sqlCom.Connection = cn
+        cn.Open()
 
         Dim sqlRead As System.Data.OleDb.OleDbDataReader = sqlCom.ExecuteReader()
 
@@ -65,6 +66,6 @@ FROM Dual;"
 
         End If
 
-        conn.Close()
+        cn.Close()
     End Sub
 End Class

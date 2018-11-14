@@ -17,14 +17,13 @@ Public Class KidLogin
             txtPasswordKidLogin.Focus()
 
         Else
-            Dim conn As New System.Data.OleDb.OleDbConnection()
-            conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.CommonAppDataPath & "\AllowanceTracker.mdb"
+
             Try
                 Dim sql As String = "SELECT * FROM tblChildInformation WHERE ChildName='" & cboChooseName.Text & "' AND ChildPassword = '" & txtPasswordKidLogin.Text & "'"
                 Dim sqlCom As New System.Data.OleDb.OleDbCommand(sql)
 
-                sqlCom.Connection = conn
-                conn.Open()
+                sqlCom.Connection = cn
+                cn.Open()
 
                 Dim sqlRead As System.Data.OleDb.OleDbDataReader = sqlCom.ExecuteReader()
                 If sqlRead.Read() Then
@@ -52,7 +51,7 @@ Public Class KidLogin
                 MessageBox.Show("Failed to connect to Database..", "Database Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
             End Try
-            conn.Close()
+            cn.Close()
         End If
 
     End Sub
@@ -79,9 +78,13 @@ Public Class KidLogin
         ' This code populates the datatable for the combo box and connects to the database
         ' on form load
 
-        Dim conn As New System.Data.OleDb.OleDbConnection()
-        conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.CommonAppDataPath & "\AllowanceTracker.mdb"
-        Dim sda As New System.Data.OleDb.OleDbDataAdapter("SELECT ChildName FROM tblChildInformation", conn)
+
+
+        Me.Bounds = Main.Bounds
+
+        Call connection()
+
+        Dim sda As New System.Data.OleDb.OleDbDataAdapter("SELECT ChildName FROM tblChildInformation", cn)
         'Fill the DataTable with records from Table.
         Dim dt As DataTable = New DataTable()
         sda.Fill(dt)

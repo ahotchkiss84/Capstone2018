@@ -177,6 +177,7 @@ Partial Class ParentLogin
         Me.Controls.Add(Me.lblHeadingParentLogin)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "ParentLogin"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Parent Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -58,6 +58,8 @@
     Private Sub RegisterChild_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Calls the connection
 
+        Me.Bounds = Main.Bounds
+
         Call connection()
     End Sub
 End Class

@@ -22,12 +22,9 @@
         ' This event handler executes when the user clicks the submit button and overwrites the old
         ' password in the access database.
 
-        Dim conn As New System.Data.OleDb.OleDbConnection()
         Dim sql = "SELECT ParentUser FROM tblUserInformation"
         Dim cmd As New System.Data.OleDb.OleDbCommand(sql)
-        cmd = New System.Data.OleDb.OleDbCommand(sql, conn)
-        conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.CommonAppDataPath & "\AllowanceTracker.mdb"
-        conn.Open()
+        cmd = New System.Data.OleDb.OleDbCommand(sql, cn)
         Dim dr As System.Data.OleDb.OleDbDataReader = cmd.ExecuteReader
 
         If txtUsernameForgotPassword.Text = "" Then
@@ -44,7 +41,7 @@
             Dim cmdText = "UPDATE tblUserInformation SET ParentPassword = @ParentPassword " &
                       "WHERE ParentUser = @ParentUser AND ParentPassword = @ParentPassword"
             dr.Close()
-            Dim cmdUpdate As New System.Data.OleDb.OleDbCommand(cmdText, conn)
+            Dim cmdUpdate As New System.Data.OleDb.OleDbCommand(cmdText, cn)
             cmdUpdate.Parameters.AddWithValue("@ParentPassword", txtNewPasswordForgotPassword.Text)
             cmdUpdate.Parameters.AddWithValue("@ParentUser", txtUsernameForgotPassword.Text)
             cmdUpdate.ExecuteNonQuery()
@@ -53,9 +50,15 @@
             txtUsernameForgotPassword.Text = ""
             txtNewPasswordForgotPassword.Text = ""
 
-            conn.Close()
+            cn.Close()
 
         End If
+
+    End Sub
+
+    Private Sub ForgotPassword_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Bounds = Main.Bounds
+        Call connection()
 
     End Sub
 End Class

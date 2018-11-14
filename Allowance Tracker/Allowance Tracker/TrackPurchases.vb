@@ -75,14 +75,14 @@ Public Class TrackPurchases
     Private Sub TrackPurchases_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Calls the connection method for the access database
 
+        Me.Bounds = Main.Bounds
+
         Call connection()
 
         ' This code populates the datatable for the combo box and connects to the database
         ' on form load
 
-        Dim conn As New System.Data.OleDb.OleDbConnection()
-        conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Application.CommonAppDataPath & "\AllowanceTracker.mdb"
-        Dim sda As New System.Data.OleDb.OleDbDataAdapter("SELECT ChildName FROM tblChildInformation", conn)
+        Dim sda As New System.Data.OleDb.OleDbDataAdapter("SELECT ChildName FROM tblChildInformation", cn)
         'Fill the DataTable with records from Table.
         Dim dt As DataTable = New DataTable()
         sda.Fill(dt)
@@ -95,6 +95,6 @@ Public Class TrackPurchases
         cboChooseNamePurchases.DataSource = dt
         cboChooseNamePurchases.DisplayMember = "ChildName"
 
-        conn.Close()
+        cn.Close()
     End Sub
 End Class

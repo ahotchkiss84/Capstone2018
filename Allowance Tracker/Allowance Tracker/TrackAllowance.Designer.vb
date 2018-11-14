@@ -198,6 +198,7 @@ Partial Class TrackAllowance
         Me.Controls.Add(Me.lblChildNameAllowance)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "TrackAllowance"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Track Allowance"
         Me.ResumeLayout(False)
         Me.PerformLayout()
